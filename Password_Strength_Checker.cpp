@@ -3,6 +3,7 @@
 void printStrongness(string &input)
 {
     int n = input.length();
+    cout << n;
 
     bool hasLower = false;
     bool hasUpper = false;
@@ -10,6 +11,7 @@ void printStrongness(string &input)
     bool hasSpecial = false;
 
     string normalChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-    
+    cout << normalChars;
+
 }
 

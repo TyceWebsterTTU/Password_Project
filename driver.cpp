@@ -4,5 +4,8 @@
 
 int main()
 {
+    string pass = "";
+    getline(cin, pass);
+    printStrongness(pass);
     return 0;
 }
