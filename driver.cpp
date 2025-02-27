@@ -4,8 +4,8 @@
 
 int main()
 {
-    string pass = "";
-    getline(cin, pass);
-    printStrongness(pass);
+    string password = "";
+    getline(cin, password);
+    printStrongness(password);
     return 0;
 }
