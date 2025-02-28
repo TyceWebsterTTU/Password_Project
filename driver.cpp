@@ -4,6 +4,10 @@
 
 int main()
 {
+    int i = selectArray();
+    int key = getKey();
+    cout << i << endl << key << endl;
+    
     string password = "";
     getline(cin, password);
     printStrongness(password);

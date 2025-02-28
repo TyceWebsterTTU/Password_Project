@@ -16,24 +16,40 @@ void printStrongness(string &password)
     for (int i = 0; i < n; i++)
     {
         if (islower(password[i]))
+        {
             hasLower = true;
+        }
         else if (isupper(password[i]))
+        {
             hasUpper = true;
+        }
         else if (isdigit(password[i]))
+        {
             hasDigit = true;
-            
+        }
+
         size_t special = password.find_first_not_of(normalChars);
         if (special != string::npos)
+        {
             hasSpecial = true;
+        }
     }
 
-    cout << "Strength of password: ";
+    cout << "Strength of Password: ";
 
     if (hasLower && hasUpper && hasDigit && hasSpecial && (n >=8))
+    {
         cout << "Strong" << endl;
+    }
     else if ((hasLower || hasUpper) && hasSpecial && (n >= 6))
+    {
         cout << "Moderate" << endl;
+        cout << endl << "Suggested Strong Password: ";
+    }
     else
+    {
         cout << "Weak" << endl;
+        cout << endl << "Suggested Strong Password: ";
+    }
 }
 
